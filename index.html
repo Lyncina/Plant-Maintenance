@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <title>Plant Maintenance</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div id="tiles">
+        <div onclick="infoGH.open=true" id="grape-hyacinth">
+          <img src=".png">
+          <span class="plant-name">Grape Hyacinth</span>
+        </div>
+        <dialog id="GH-info">
+          <div>
+            <p>Testing... Testing... 1... 2...</p>
+            <button onclick="infoGH.open=false">X</button>
+          </div>
+        </dialog>
+        <div id="pink-hyacinth">
+          <img src=".png">
+          <span class="plant-name">Pink Hyacinth</span>
+        </div>
+        <div id="solomons-seal">
+          <img src=".png">
+          <span class="plant-name">Solomon's Seal</span>
+        </div>
+        <div id="bleeding-heart">
+          <img src=".png">
+          <span class="plant-name">Bleeding Heart</span>
+        </div>
+      </div>
+    </main>
+    <script src="js/makeItWork.js"></script>
+  </body>
+</html>

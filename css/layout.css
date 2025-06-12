@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5px;
+  height: 100%;
+  width: 100%;
+  background: rgb(157, 203, 255);
+}
+
+#tiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#tiles > div {
+  flex: 10%;
+  position: relative;
+  margin: 5px;
+  min-height: 145pt;
+  max-height: 145pt;
+  min-width: 100pt;
+  max-width: 100pt;
+  background: linear-gradient(180deg, rgb(85, 190, 110) 20%, rgb(67, 151, 87) 83%, rgb(56, 127, 72) 99%);
+  border-radius: 8px;
+  box-shadow: 0 0 2px 2px rgb(44, 90, 60);
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5pt;
+    height: 90pt;
+    width: 90pt;
+  }
+}
+
+#tiles > div:hover {
+  box-shadow: 0 0 2px -0.5px rgb(28, 56, 38), 0 0 4px 3px rgb(41, 83, 56);
+  cursor: pointer;
+}
+
+.plant-name {
+  position: absolute;
+  left: 50%;
+  bottom: 5pt;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: Papyrus;
+  font-weight: bold;
+}
+
+dialog {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  z-index: 2;
+  cursor: default;
+  div {
+    position: relative;
+    margin: auto;
+    height: 100pt;
+    width: 200pt;
+    background: pink;
+  }
+}
