@@ -1,9 +1,4 @@
 const infoGH = document.getElementById("GH-info");
-
-function openInfo () {
-  infoGH.show();
-}
-
-function closeInfo () {
-  infoGH.close();
-}
+const infoFH = document.getElementById("FH-info");
+const infoSS = document.getElementById("SS-info");
+const infoBH = document.getElementById("BH-info");

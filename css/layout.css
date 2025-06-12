@@ -10,6 +10,19 @@ body {
   background: rgb(157, 203, 255);
 }
 
+header {
+  margin: 10pt auto;
+  text-align: center;
+  font-size: 20pt;
+  h1 {
+    font-family: "Brush Script MT", "Lucida Calligraphy";
+    text-shadow: 0 0 15px #f5ff8b;
+  }
+  h3 {
+    font-family: "Bradley Hand ITC", "Lucida Handwriting";
+  }
+}
+
 #tiles {
   display: flex;
   flex-wrap: wrap;
@@ -32,11 +45,28 @@ body {
   img {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
     margin-top: 5pt;
     height: 90pt;
     width: 90pt;
+    object-fit: cover;
+    transform: translateX(-50%);
   }
+}
+
+#grape-hyacinth > img {
+  object-position: 50% 95%;
+}
+
+#fondant-hyacinth > img {
+  object-position: 50% 15%;
+}
+
+#solomons-seal > img {
+  object-position: 50% 50%;
+}
+
+#bleeding-heart > img {
+  object-position: 50% 57%;
 }
 
 #tiles > div:hover {
@@ -48,10 +78,10 @@ body {
   position: absolute;
   left: 50%;
   bottom: 5pt;
-  transform: translateX(-50%);
   text-align: center;
-  font-family: Papyrus;
+  font-family: "Comic Sans MS", "Century Gothic";
   font-weight: bold;
+  transform: translateX(-50%);
 }
 
 dialog {
@@ -60,14 +90,62 @@ dialog {
   margin: auto;
   height: 100%;
   width: 100%;
-  background: transparent;
+  background: #00000098;
   z-index: 2;
   cursor: default;
   div {
     position: relative;
+    top: 50pt;
     margin: auto;
-    height: 100pt;
-    width: 200pt;
-    background: pink;
+    padding: 10pt;
+    height: 70%;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 8px #00000090;
+    img {
+      float: left;
+      margin-right: 5pt;
+      height: 40vw;
+      max-height: 80%;
+    }
+    h2 {
+      text-align: center;
+      font-family: "Lucida Handwriting";
+    }
+    p {
+      margin-top: 10pt;
+      font-family: sans-serif;
+    }
+    button {
+      position: absolute;
+      left: 50%;
+      bottom: 5pt;
+      margin-top: 5pt;
+      height: 25pt;
+      width: 97%;
+      background: #d0d0d0;
+      border-radius: 9px;
+      border-color: rgba(0, 0, 0, 0.288);
+      transform: translateX(-50%);
+    }
+    button:hover {
+      background: #b7b7b7;
+    }
   }
+}
+
+#GH-info > div {
+  background: #6b75d5;
+}
+
+#FH-info > div {
+  background: #ffafdc;
+}
+
+#SS-info > div {
+  background: #f0fae0;
+}
+
+#BH-info > div {
+  background: #d47cae;
 }
