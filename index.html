@@ -13,7 +13,6 @@
     </header>
     <!-- To-Dos:
 
-    - Figure out how it should look overall
     - Set it up so that it will bring important things to my attention, like when each kind of plant should be tended to in the current month, or next month/week/day
     - Plug in IMGs and more data
     - Find way to easily add more data in future
@@ -21,54 +20,98 @@
     -->
     <main>
       <div id="tiles">
+
         <div onclick="infoGH.open=true" id="grape-hyacinth">
           <img src="IMGs/GrapeHyacinth.png">
           <span class="plant-name">Grape Hyacinth</span>
         </div>
-        <dialog id="GH-info">
+        <dialog id="GH-info"> <!--Dialog Start-->
           <div>
             <h2>Grape Hyacinth</h2>
             <img src="IMGs/GrapeHyacinth.png">
-            <p></p>
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <p><strong>Seeds Mature: </strong>
+            
+            </p>
+            <p><strong>Flower Dies: </strong>
+            
+            </p>
             <button onclick="infoGH.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoFH.open=true" id="fondant-hyacinth">
           <img src="IMGs/FondantHyacinth.png">
           <span class="plant-name">Fondant Hyacinth</span>
         </div>
-        <dialog id="FH-info">
+        <dialog id="FH-info"> <!--Dialog Start-->
           <div>
             <h2>Fondant Hyacinth</h2>
             <img src="IMGs/FondantHyacinth.png">
-            <p>Testing... Testing... 1... 2...</p>
+            <p><strong>Blooms: </strong>
+              Early Spring, March-May
+            </p>
+            <p><strong>Seeds Mature: </strong>
+            
+            </p>
+            <p><strong>Flower Dies: </strong>
+            
+            </p>
+            <p><strong>: </strong>
+            
+            </p>
+            <p><strong>: </strong>
+            
+            </p>
+            <p><strong>: </strong>
+            
+            </p>
             <button onclick="infoFH.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoSS.open=true" id="solomons-seal">
           <img src="IMGs/SolomonsSeal.png">
           <span class="plant-name">Solomon's Seal</span>
         </div>
-        <dialog id="SS-info">
+        <dialog id="SS-info"> <!--Dialog Start-->
           <div>
             <h2>Solomon's Seal</h2>
             <img src="IMGs/SolomonsSeal.png">
-            <p>Testing... Testing... 1... 2...</p>
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <p><strong>Seeds Mature: </strong>
+            
+            </p>
+            <p><strong>Flower Dies: </strong>
+              Testing... Testing... 1... 2...</p>
             <button onclick="infoSS.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoBH.open=true" id="bleeding-heart">
           <img src="IMGs/BleedingHeart.png">
           <span class="plant-name">Bleeding Heart</span>
         </div>
-        <dialog id="BH-info">
+        <dialog id="BH-info"> <!--Dialog Start-->
           <div>
             <h2>Bleeding Heart</h2>
             <img src="IMGs/BleedingHeart.png">
-            <p>Testing... Testing... 1... 2...</p>
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <p><strong>Seeds Mature: </strong>
+            
+            </p>
+            <p><strong>Flower Dies: </strong>
+              Testing... Testing... 1... 2...</p>
             <button onclick="infoBH.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
       </div>
     </main>
     <script src="js/makeItWork.js"></script>
