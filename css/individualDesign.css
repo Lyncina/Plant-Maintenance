@@ -1,0 +1,103 @@
+#daffodil > img {
+  object-position: 50% 56%;
+}
+
+#D-info > div {
+  background: #fff;
+}
+
+#tulip > img {
+  object-position: 50% 20%;
+}
+
+#T-info > div {
+  background: #fff;
+}
+
+#grape-hyacinth > img {
+    object-position: 50% 95%;
+}
+
+#GH-info > div {
+  background-image: radial-gradient(#6b75d5 60%, #4351cd 90%);
+}
+
+#fondant-hyacinth > img {
+  object-position: 50% 15%;
+}
+
+#FH-info > div {
+  background: radial-gradient(#ffafdc 55%, #fc74c1 65% 70%, #ffafdc 80%);
+}
+
+#solomons-seal > img {
+  object-position: 50% 50%;
+}
+
+#SS-info > div {
+  background: linear-gradient(180deg, #f0fae0 65%, #aed077 90%);
+}
+
+#bearded-iris > img {
+  object-position: 50% 50%;
+}
+
+#BI-info > div {
+  background: #fff;
+}
+
+#bleeding-heart > img {
+  object-position: 50% 57%;
+}
+
+#BH-info > div {
+  background: linear-gradient(180deg, #f995cc 50%, #d45d9f 90%);
+}
+
+#peony > img {
+  object-position: 40% 50%;
+}
+
+#P-info > div {
+  background: #fff;
+}
+
+#columbine > img {
+  object-position: 5% 50%;
+}
+
+#C-info > div {
+  background: #fff;
+}
+
+#stella-d-oro > img {
+  object-position: 50% 10%;
+}
+
+#SDOD-info > div {
+  background: linear-gradient(30deg, #cdaa49 55%, #cf9905 70%);
+}
+
+#miss-tinkerbell > img {
+  object-position: 20% 50%;
+}
+
+#MTD-info > div {
+  background: linear-gradient(220deg, #eaa122 15%, #fc5d00 25%, #e69778 30%, #ffae8e 40% 80%, #e69778 95%);
+}
+
+#orange-daylily > img {
+  object-position: 80% 50%;
+}
+
+#OD-info > div {
+  background: linear-gradient(160deg, #dba41b 3% 5%, #c42400 10%, #dd4812 20%, #ea7b2b 70%);
+}
+
+#orange-marmalade > img {
+  object-position: 50% 50%;
+}
+
+#OMH-info > div {
+  background: #fff;
+}

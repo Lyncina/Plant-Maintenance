@@ -55,22 +55,6 @@ header {
   }
 }
 
-#grape-hyacinth > img {
-  object-position: 50% 95%;
-}
-
-#fondant-hyacinth > img {
-  object-position: 50% 15%;
-}
-
-#solomons-seal > img {
-  object-position: 50% 50%;
-}
-
-#bleeding-heart > img {
-  object-position: 50% 57%;
-}
-
 #tiles > div:hover {
   box-shadow: 0 0 2px -0.5px rgb(28, 56, 38), 0 0 4px 3px rgb(41, 83, 56);
   cursor: pointer;
@@ -136,20 +120,4 @@ dialog {
       background: #b7b7b7;
     }
   }
-}
-
-#GH-info > div {
-  background: #6b75d5;
-}
-
-#FH-info > div {
-  background: #ffafdc;
-}
-
-#SS-info > div {
-  background: #f0fae0;
-}
-
-#BH-info > div {
-  background: #db83b4;
 }
