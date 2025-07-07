@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/individualDesign.css">
     <title>Plant Maintenance</title>
   </head>
   <body>
@@ -13,62 +14,635 @@
     </header>
     <!-- To-Dos:
 
-    - Figure out how it should look overall
     - Set it up so that it will bring important things to my attention, like when each kind of plant should be tended to in the current month, or next month/week/day
     - Plug in IMGs and more data
     - Find way to easily add more data in future
     
     -->
     <main>
+      <div id="filters">
+        <button onclick="showAll()">Show All</button>
+        <select>
+          <option class="default-option">Bloom</option>
+          <option>Spring</option>
+          <option>Summer</option>
+          <option>Autumn</option>
+          <option>Winter</option>
+        </select>
+        <select>
+          <option class="default-option">Wilt</option>
+          <option>Spring</option>
+          <option>Summer</option>
+          <option>Autumn</option>
+          <option>Winter</option>
+        </select>
+        <select>
+          <option class="default-option">Seeds Available</option>
+          <option>Spring</option>
+          <option>Summer</option>
+          <option>Autumn</option>
+          <option>Winter</option>
+        </select>
+      </div>
+
       <div id="tiles">
+
+        <div onclick="infoD.open=true" id="daffodil">
+          <img src="IMGs/daffodil.png">
+          <span class="plant-name">Daffodil</span>
+        </div>
+        <dialog id="D-info"> <!--Dialog Start-->
+          <div>
+            <h2>Daffodil</h2>
+            <img src="IMGs/daffodil.png">
+            <p><strong>Blooms: </strong>
+              Spring
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoD.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoT.open=true" id="tulip">
+          <img src="IMGs/tulip.png">
+          <span class="plant-name">Tulip</span>
+        </div>
+        <dialog id="T-info"> <!--Dialog Start-->
+          <div>
+            <h2>Tulip</h2>
+            <img src="IMGs/tulip.png">
+            <p><strong>Blooms: </strong>
+              Spring
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoT.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoGH.open=true" id="grape-hyacinth">
-          <img src="IMGs/GrapeHyacinth.png">
+          <img src="IMGs/grape-hyacinth.png">
           <span class="plant-name">Grape Hyacinth</span>
         </div>
-        <dialog id="GH-info">
+        <dialog id="GH-info"> <!--Dialog Start-->
           <div>
             <h2>Grape Hyacinth</h2>
-            <img src="IMGs/GrapeHyacinth.png">
-            <p></p>
+            <img src="IMGs/grape-hyacinth.png">
+            <p><strong>Blooms: </strong>
+              Spring, March-May
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              April-May
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              May-June
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              Spring
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              Fall
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              3 inches apart, 3 inches deep
+            </p>
             <button onclick="infoGH.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoFH.open=true" id="fondant-hyacinth">
-          <img src="IMGs/FondantHyacinth.png">
+          <img src="IMGs/fondant-hyacinth.png">
           <span class="plant-name">Fondant Hyacinth</span>
         </div>
-        <dialog id="FH-info">
+        <dialog id="FH-info"> <!--Dialog Start-->
           <div>
             <h2>Fondant Hyacinth</h2>
-            <img src="IMGs/FondantHyacinth.png">
-            <p>Testing... Testing... 1... 2...</p>
+            <img src="IMGs/fondant-hyacinth.png">
+            <p><strong>Blooms: </strong>
+              Spring, March-May
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              April-May
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              ?
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              Late Spring, Early Summer
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              Fall
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              5 inches apart, 4 inches deep
+            </p>
             <button onclick="infoFH.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoSS.open=true" id="solomons-seal">
-          <img src="IMGs/SolomonsSeal.png">
+          <img src="IMGs/solomons-seal.png">
           <span class="plant-name">Solomon's Seal</span>
         </div>
-        <dialog id="SS-info">
+        <dialog id="SS-info"> <!--Dialog Start-->
           <div>
             <h2>Solomon's Seal</h2>
-            <img src="IMGs/SolomonsSeal.png">
-            <p>Testing... Testing... 1... 2...</p>
+            <img src="IMGs/solomons-seal.png">
+            <p><strong>Blooms: </strong>
+              Spring, April-May
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              May
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
             <button onclick="infoSS.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoBI.open=true" id="bearded-iris">
+          <img src="IMGs/bearded-iris.png">
+          <span class="plant-name">Bearded Iris</span>
+        </div>
+        <dialog id="BI-info"> <!--Dialog Start-->
+          <div>
+            <h2>Bearded Iris</h2>
+            <img src="IMGs/bearded-iris.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoBI.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
         <div onclick="infoBH.open=true" id="bleeding-heart">
-          <img src="IMGs/BleedingHeart.png">
+          <img src="IMGs/bleeding-heart.png">
           <span class="plant-name">Bleeding Heart</span>
         </div>
-        <dialog id="BH-info">
+        <dialog id="BH-info"> <!--Dialog Start-->
           <div>
             <h2>Bleeding Heart</h2>
-            <img src="IMGs/BleedingHeart.png">
-            <p>Testing... Testing... 1... 2...</p>
+            <img src="IMGs/bleeding-heart.png">
+            <p><strong>Blooms: </strong>
+              Spring, April
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              May
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+            
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
             <button onclick="infoBH.open=false"><strong>X</strong></button>
           </div>
-        </dialog>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoP.open=true" id="peony">
+          <img src="IMGs/peony.png">
+          <span class="plant-name">Peony</span>
+        </div>
+        <dialog id="P-info"> <!--Dialog Start-->
+          <div>
+            <h2>Peony</h2>
+            <img src="IMGs/peony.png">
+            <p><strong>Blooms: </strong>
+              Spring, May
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              May
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoP.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoC.open=true" id="columbine">
+          <img src="IMGs/columbine.png">
+          <span class="plant-name">Columbine</span>
+        </div>
+        <dialog id="C-info"> <!--Dialog Start-->
+          <div>
+            <h2>Columbine</h2>
+            <img src="IMGs/columbine.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              May
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              June
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoC.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoSDOD.open=true" id="stella-d-oro">
+          <img src="IMGs/stella-d-oro.png">
+          <span class="plant-name">Stella d'Oro</span>
+        </div>
+        <dialog id="SDOD-info"> <!--Dialog Start-->
+          <div>
+            <h2>Stella d'Oro Daylily</h2>
+            <img src="IMGs/stella-d-oro.png">
+            <p><strong>Blooms: </strong>
+              Summer, June
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              Spring (When they first emerge)
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoSDOD.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoMTD.open=true" id="miss-tinkerbell">
+          <img src="IMGs/miss-tinkerbell.png">
+          <span class="plant-name">Miss Tinkerbell</span>
+        </div>
+        <dialog id="MTD-info"> <!--Dialog Start-->
+          <div>
+            <h2>Miss Tinkerbell Daylily</h2>
+            <img src="IMGs/miss-tinkerbell.png">
+            <p><strong>Blooms: </strong>
+              Summer, June-July
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoMTD.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoOD.open=true" id="orange-daylily">
+          <img src="IMGs/orange-daylily.png">
+          <span class="plant-name">Orange Daylily</span>
+        </div>
+        <dialog id="OD-info"> <!--Dialog Start-->
+          <div>
+            <h2>Orange Daylily</h2>
+            <img src="IMGs/orange-daylily.png">
+            <p><strong>Blooms: </strong>
+              Summer, June
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              Fall
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoOD.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoOMH.open=true" id="orange-marmalade">
+          <img src="IMGs/orange-marmalade.png">
+          <span class="plant-name">Orange Marmalade</span>
+        </div>
+        <dialog id="OMH-info"> <!--Dialog Start-->
+          <div>
+            <h2>Orange Marmalade Hosta</h2>
+            <img src="IMGs/orange-marmalade.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="infoOMH.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="info__.open=true" id="">
+          <img src="IMGs/.png">
+          <span class="plant-name">__ Hosta</span>
+        </div>
+        <dialog id="-info"> <!--Dialog Start-->
+          <div>
+            <h2></h2>
+            <img src="IMGs/.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="info__.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="info__.open=true" id="">
+          <img src="IMGs/.png">
+          <span class="plant-name">__ Hosta</span>
+        </div>
+        <dialog id="-info"> <!--Dialog Start-->
+          <div>
+            <h2></h2>
+            <img src="IMGs/.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="info__.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="info__.open=true" id="">
+          <img src="IMGs/.png">
+          <span class="plant-name"></span>
+        </div>
+        <dialog id="-info"> <!--Dialog Start-->
+          <div>
+            <h2></h2>
+            <img src="IMGs/.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="info__.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <!--   Copy/Paste for another card
+        <div onclick="info__.open=true" id="">
+          <img src="IMGs/.png">
+          <span class="plant-name"></span>
+        </div>
+        <dialog id="-info"> --><!--Dialog Start-->
+          <!--
+          <div>
+            <h2></h2>
+            <img src="IMGs/.png">
+            <p><strong>Blooms: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Wilts: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Seeds Available: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Seed: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Best Time to Propagate by Division: </strong>
+              
+            </p>
+            <br>
+            <p><strong>Planting Bulbs: </strong>
+              
+            </p>
+            <button onclick="info__.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> --><!--Dialog End-->
       </div>
     </main>
     <script src="js/makeItWork.js"></script>
