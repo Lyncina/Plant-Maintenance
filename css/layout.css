@@ -1,14 +1,21 @@
+:root {
+  --bloom-soon: #d8fde6;
+  --seeds-soon: #e4e01d;
+  --needs-attention: #c55c2c;
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
   color: #000;
+  scrollbar-gutter: stable;
 }
 
 body {
   padding: 5px;
   height: 100%;
   width: 100%;
-  background: rgb(157, 203, 255);
+  background: #9dcbff;
 }
 
 header {
@@ -33,7 +40,8 @@ header {
   position: relative;
 }
 
-#tiles > div {
+.tile {
+  display: none;
   flex: 10%;
   position: relative;
   margin: 5px;
@@ -41,9 +49,9 @@ header {
   max-height: 145pt;
   min-width: 100pt;
   max-width: 100pt;
-  background: linear-gradient(180deg, rgb(85, 190, 110) 20%, rgb(67, 151, 87) 83%, rgb(56, 127, 72) 99%);
+  background: linear-gradient(180deg, #55be6e 20%, #439757 83%, #387f48 99%);
   border-radius: 8px;
-  box-shadow: 0 0 2px 2px rgb(44, 90, 60);
+  box-shadow: 0 0 2px 2px #2c5a3c;
   img {
     position: relative;
     left: 50%;
@@ -55,8 +63,12 @@ header {
   }
 }
 
+.show {
+  display: block !important;
+}
+
 #tiles > div:hover {
-  box-shadow: 0 0 2px -0.5px rgb(28, 56, 38), 0 0 4px 3px rgb(41, 83, 56);
+  box-shadow: 0 0 2px -0.5px #1c3826, 0 0 4px 3px #295338;
   cursor: pointer;
 }
 
