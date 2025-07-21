@@ -1,9 +1,3 @@
-:root {
-  --bloom-soon: #d8fde6;
-  --seeds-soon: #e4e01d;
-  --needs-attention: #c55c2c;
-}
-
 * {
   margin: 0;
   box-sizing: border-box;
@@ -29,6 +23,23 @@ header {
   h3 {
     font-family: "Bradley Hand ITC", "Lucida Handwriting";
     text-shadow: 2px 2px 8px #ffffff, -2px -2px 8px #ffffff;
+  }
+}
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 25pt auto;
+  p {
+    flex: 100%;
+    margin: 5pt auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
   }
 }
 
@@ -63,13 +74,37 @@ header {
   }
 }
 
-.show {
-  display: block !important;
-}
-
-#tiles > div:hover {
+.tile:hover {
   box-shadow: 0 0 2px -0.5px #1c3826, 0 0 4px 3px #295338;
   cursor: pointer;
+}
+
+.bloom-soon {
+  box-shadow: 0 0 2px 2px #d8fde6 !important;
+}
+
+.bloom-soon:hover {
+  box-shadow: 0 0 2px -0.5px #e3ffee, 0 0 4px 3px #e1ffec !important;
+}
+
+.seeds-soon {
+  box-shadow: 0 0 2px 2px #e4e01d !important;
+}
+
+.seeds-soon:hover {
+  box-shadow: 0 0 2px -0.5px #c4c10f, 0 0 4px 3px #f7f586 !important;
+}
+
+.attn-soon {
+  box-shadow: 0 0 2px 2px #c55c2c !important;
+}
+
+.attn-soon:hover {
+  box-shadow: 0 0 2px 0.5px #ab400e, 0 0 4px 3px #ee763e !important;
+}
+
+.show {
+  display: block !important;
 }
 
 .plant-name {
