@@ -2,13 +2,14 @@
   margin: 0;
   box-sizing: border-box;
   color: #000;
+  scrollbar-gutter: stable;
 }
 
 body {
   padding: 5px;
-  height: 100vh;
-  width: 100vw;
-  background: rgb(157, 203, 255);
+  height: 100%;
+  width: 100%;
+  background: #9dcbff;
 }
 
 header {
@@ -25,6 +26,23 @@ header {
   }
 }
 
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 25pt auto;
+  font-family: sans-serif;
+  p {
+    flex: 100%;
+    margin: 5pt auto;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: bold;
+  }
+}
+
 #tiles {
   display: flex;
   flex-wrap: wrap;
@@ -33,7 +51,8 @@ header {
   position: relative;
 }
 
-#tiles > div {
+.tile {
+  display: none;
   flex: 10%;
   position: relative;
   margin: 5px;
@@ -41,9 +60,9 @@ header {
   max-height: 145pt;
   min-width: 100pt;
   max-width: 100pt;
-  background: linear-gradient(180deg, rgb(85, 190, 110) 20%, rgb(67, 151, 87) 83%, rgb(56, 127, 72) 99%);
+  background: linear-gradient(180deg, #55be6e 20%, #439757 83%, #387f48 99%);
   border-radius: 8px;
-  box-shadow: 0 0 2px 2px rgb(44, 90, 60);
+  box-shadow: 0 0 2px 2px #2c5a3c;
   img {
     position: relative;
     left: 50%;
@@ -55,9 +74,37 @@ header {
   }
 }
 
-#tiles > div:hover {
-  box-shadow: 0 0 2px -0.5px rgb(28, 56, 38), 0 0 4px 3px rgb(41, 83, 56);
+.tile:hover {
+  box-shadow: 0 0 2px -0.5px #1c3826, 0 0 4px 3px #295338;
   cursor: pointer;
+}
+
+.bloom-soon {
+  box-shadow: 0 0 2px 2px #d8fde6 !important;
+}
+
+.bloom-soon:hover {
+  box-shadow: 0 0 2px -0.5px #e3ffee, 0 0 4px 3px #e1ffec !important;
+}
+
+.seeds-soon {
+  box-shadow: 0 0 2px 2px #e4e01d !important;
+}
+
+.seeds-soon:hover {
+  box-shadow: 0 0 2px -0.5px #c4c10f, 0 0 4px 3px #f7f586 !important;
+}
+
+.attn-soon {
+  box-shadow: 0 0 2px 2px #c55c2c !important;
+}
+
+.attn-soon:hover {
+  box-shadow: 0 0 2px 0.5px #ab400e, 0 0 4px 3px #ee763e !important;
+}
+
+.show {
+  display: block !important;
 }
 
 .plant-name {
