@@ -33,11 +33,11 @@ header {
   justify-content: center;
   position: relative;
   margin: 25pt auto;
+  font-family: sans-serif;
   p {
     flex: 100%;
     margin: 5pt auto;
     text-align: center;
-    font-family: sans-serif;
     font-size: 12pt;
     font-weight: bold;
   }

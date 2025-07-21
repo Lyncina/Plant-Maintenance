@@ -14,40 +14,42 @@
     </header>
     <!-- To-Dos:
 
-    - Set it up so that it will bring important things to my attention, like when each kind of plant should be tended to in the current month, or next month/week/day
+    - Filters work individually in "copy2.js", but figure out how to make them work together
+      - Maybe if I only ran filterTiles() when clicking a button, after all the dropdowns have been set up?
     - Plug in IMGs and more data
     - Find way to easily add more data in future
     
     -->
     <main>
       <div id="filters">
-        <button onclick="showAll()">Show All</button>
-        <select>
+        <button onclick="showTiles()">Show All</button>
+        <p>Or Filter By:</p>
+        <select id="bloom-filter">
           <option class="default-option">Bloom</option>
-          <option>Spring</option>
-          <option>Summer</option>
-          <option>Autumn</option>
-          <option>Winter</option>
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="autumn">Autumn</option>
+          <option value="winter">Winter</option>
         </select>
-        <select>
+        <select id="wilt-filter">
           <option class="default-option">Wilt</option>
-          <option>Spring</option>
-          <option>Summer</option>
-          <option>Autumn</option>
-          <option>Winter</option>
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="autumn">Autumn</option>
+          <option value="winter">Winter</option>
         </select>
-        <select>
+        <select id="seeds-filter">
           <option class="default-option">Seeds Available</option>
-          <option>Spring</option>
-          <option>Summer</option>
-          <option>Autumn</option>
-          <option>Winter</option>
+          <option value="spring">Spring</option>
+          <option value="summer">Summer</option>
+          <option value="autumn">Autumn</option>
+          <option value="winter">Winter</option>
         </select>
       </div>
 
       <div id="tiles">
 
-        <div onclick="infoD.open=true" id="daffodil">
+        <div onclick="infoD.open=true" id="daffodil" class="tile show bloom-spring">
           <img src="IMGs/daffodil.png">
           <span class="plant-name">Daffodil</span>
         </div>
@@ -82,7 +84,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoT.open=true" id="tulip">
+        <div onclick="infoT.open=true" id="tulip" class="tile show bloom-spring wilt-spring">
           <img src="IMGs/tulip.png">
           <span class="plant-name">Tulip</span>
         </div>
@@ -117,7 +119,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoGH.open=true" id="grape-hyacinth">
+        <div onclick="infoGH.open=true" id="grape-hyacinth" class="tile show bloom-spring">
           <img src="IMGs/grape-hyacinth.png">
           <span class="plant-name">Grape Hyacinth</span>
         </div>
@@ -152,7 +154,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoFH.open=true" id="fondant-hyacinth">
+        <div onclick="infoFH.open=true" id="fondant-hyacinth" class="tile show wilt-spring">
           <img src="IMGs/fondant-hyacinth.png">
           <span class="plant-name">Fondant Hyacinth</span>
         </div>
@@ -187,7 +189,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoSS.open=true" id="solomons-seal">
+        <div onclick="infoSS.open=true" id="solomons-seal" class="tile show bloom-spring">
           <img src="IMGs/solomons-seal.png">
           <span class="plant-name">Solomon's Seal</span>
         </div>
@@ -222,7 +224,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoBI.open=true" id="bearded-iris">
+        <div onclick="infoBI.open=true" id="bearded-iris" class="tile show">
           <img src="IMGs/bearded-iris.png">
           <span class="plant-name">Bearded Iris</span>
         </div>
@@ -257,7 +259,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoBH.open=true" id="bleeding-heart">
+        <div onclick="infoBH.open=true" id="bleeding-heart" class="tile show">
           <img src="IMGs/bleeding-heart.png">
           <span class="plant-name">Bleeding Heart</span>
         </div>
@@ -292,7 +294,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoP.open=true" id="peony">
+        <div onclick="infoP.open=true" id="peony" class="tile show">
           <img src="IMGs/peony.png">
           <span class="plant-name">Peony</span>
         </div>
@@ -327,7 +329,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoC.open=true" id="columbine">
+        <div onclick="infoC.open=true" id="columbine" class="tile show seeds-summer">
           <img src="IMGs/columbine.png">
           <span class="plant-name">Columbine</span>
         </div>
@@ -344,7 +346,7 @@
             </p>
             <br>
             <p><strong>Seeds Available: </strong>
-              June
+              June-July
             </p>
             <br>
             <p><strong>Best Time to Propagate by Seed: </strong>
@@ -362,7 +364,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoSDOD.open=true" id="stella-d-oro">
+        <div onclick="infoSDOD.open=true" id="stella-d-oro" class="tile show bloom-summer">
           <img src="IMGs/stella-d-oro.png">
           <span class="plant-name">Stella d'Oro</span>
         </div>
@@ -397,7 +399,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoMTD.open=true" id="miss-tinkerbell">
+        <div onclick="infoMTD.open=true" id="miss-tinkerbell" class="tile show bloom-summer">
           <img src="IMGs/miss-tinkerbell.png">
           <span class="plant-name">Miss Tinkerbell</span>
         </div>
@@ -432,7 +434,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoOD.open=true" id="orange-daylily">
+        <div onclick="infoOD.open=true" id="orange-daylily" class="tile show bloom-summer">
           <img src="IMGs/orange-daylily.png">
           <span class="plant-name">Orange Daylily</span>
         </div>
@@ -467,7 +469,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoOMH.open=true" id="orange-marmalade">
+        <div onclick="infoOMH.open=true" id="orange-marmalade" class="tile show">
           <img src="IMGs/orange-marmalade.png">
           <span class="plant-name">Orange Marmalade</span>
         </div>
@@ -502,7 +504,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="info__.open=true" id="">
+        <div onclick="info__.open=true" id="" class="tile show">
           <img src="IMGs/.png">
           <span class="plant-name">__ Hosta</span>
         </div>
@@ -537,7 +539,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="info__.open=true" id="">
+        <div onclick="info__.open=true" id="" class="tile show">
           <img src="IMGs/.png">
           <span class="plant-name">__ Hosta</span>
         </div>
@@ -572,7 +574,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="info__.open=true" id="">
+        <div onclick="info__.open=true" id="" class="tile show">
           <img src="IMGs/.png">
           <span class="plant-name"></span>
         </div>
