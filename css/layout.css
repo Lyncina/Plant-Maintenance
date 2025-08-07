@@ -111,6 +111,10 @@ header {
   position: absolute;
   left: 50%;
   bottom: 5pt;
+  padding: 0 2pt;
+  height: 40pt;
+  width: 100%;
+  align-content: center;
   text-align: center;
   font-family: "Comic Sans MS", "Century Gothic";
   font-weight: bold;
