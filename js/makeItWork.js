@@ -11,7 +11,10 @@ const infoC = document.getElementById("C-info");
 const infoSDOD = document.getElementById("SDOD-info");
 const infoMTD = document.getElementById("MTD-info");
 const infoOD = document.getElementById("OD-info");
-const infoOMH = document.getElementById("OMH-info");
+const infoH = document.getElementById("H-info");
+const infoSW = document.getElementById("SW-info");
+const infoAFW = document.getElementById("AFW-info");
+
 
 const bloomFilter = document.getElementById("bloom-filter");
 const wiltFilter = document.getElementById("wilt-filter");
@@ -127,6 +130,46 @@ seedsFilter.addEventListener("change", (e) => {
 const date = new Date();
 const month = (date.getMonth() +1);
 
+const bloomSoon = tiles.getElementsByClassName('b-' + month);
+const seedsSoon = tiles.getElementsByClassName('s-' + month);
+const attnSoon = tiles.getElementsByClassName('a-' + month);
+
+for (let i = 0; i < bloomSoon.length; i++) {
+  bloomSoon[i].classList.add('bloom-soon');
+};
+
+for (let i = 0; i < seedsSoon.length; i++) {
+  seedsSoon[i].classList.add('seeds-soon');
+};
+
+for (let i = 0; i < attnSoon.length; i++) {
+  attnSoon[i].classList.add('attn-soon');
+};
+
+/*  Attempt #2
+
+const sSpring = [2,3,4,5];
+const sSummer = [5,6,7,8];
+const sAutumn = [8,9,10,11];
+const sWinter = [11,12,1,2];
+
+const bloomSummer = tiles.getElementsByClassName('bloom-summer');
+const bloomAutumn = tiles.getElementsByClassName('bloom-autumn');
+
+if (sSummer.indexOf(month) >= 0) {
+  for (let i = 0; i < bloomSummer.length; i++) {
+  bloomSummer[i].classList.add('bloom-soon');
+  };
+};
+
+if (sAutumn.indexOf(month) >= 0) {
+  for (let i = 0; i < bloomAutumn.length; i++) {
+  bloomAutumn[i].classList.add('bloom-soon');
+  };
+};*/
+
+/*  Attempt #1
+
 if (month >= 2 && month <= 4) {
   season = 'spring';
 } else if (month >= 5 && month <= 7) {
@@ -151,4 +194,4 @@ for (let i = 0; i < seedsSoon.length; i++) {
 
 for (let i = 0; i < attnSoon.length; i++) {
   attnSoon[i].classList.add('attn-soon');
-};
+};*/
