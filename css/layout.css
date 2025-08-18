@@ -41,6 +41,24 @@ header {
     font-size: 12pt;
     font-weight: bold;
   }
+  div {
+    flex: 100%;
+    text-align: center;
+  }
+}
+
+select {
+  text-align: center;
+}
+
+select:focus {
+  outline: none;
+  background-color: #dfecfc;
+  border-radius: 8px;
+}
+
+option:first-child {
+  display: none;
 }
 
 #tiles {

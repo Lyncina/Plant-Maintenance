@@ -15,7 +15,7 @@ const infoH = document.getElementById("H-info");
 const infoSW = document.getElementById("SW-info");
 const infoAFW = document.getElementById("AFW-info");
 
-
+const typeFilter = document.getElementById("type-filter");
 const bloomFilter = document.getElementById("bloom-filter");
 const wiltFilter = document.getElementById("wilt-filter");
 const seedsFilter = document.getElementById("seeds-filter");
@@ -31,6 +31,7 @@ function showTiles () {
     tile[i].classList.add("show");
   };
   
+  typeFilter.selectedIndex = 0;
   bloomFilter.selectedIndex = 0;
   wiltFilter.selectedIndex = 0;
   seedsFilter.selectedIndex = 0;
@@ -48,7 +49,39 @@ function filterTiles(c) {
   };
 };
 
+typeFilter.addEventListener("change", (e) => {
+  bloomFilter.selectedIndex = 0;
+  wiltFilter.selectedIndex = 0;
+  seedsFilter.selectedIndex = 0;
+
+  switch (e.target.value) {
+    case "dom-flowers":
+      filterTiles('domestic');
+    break;
+
+    case "wild-flowers":
+      filterTiles('wild');
+    break;
+
+    case "trees":
+      filterTiles('tree');
+    break;
+
+    case "shrubs":
+      filterTiles('shrub');
+    break;
+
+    case "vines":
+      filterTiles('vine');
+    break;
+
+    default:
+      filterTiles('tile');
+  }
+});
+
 bloomFilter.addEventListener("change", (e) => {
+  typeFilter.selectedIndex = 0;
   wiltFilter.selectedIndex = 0;
   seedsFilter.selectedIndex = 0;
 
@@ -75,6 +108,7 @@ bloomFilter.addEventListener("change", (e) => {
 });
 
 wiltFilter.addEventListener("change", (e) => {
+  typeFilter.selectedIndex = 0;
   bloomFilter.selectedIndex = 0;
   seedsFilter.selectedIndex = 0;
 
@@ -101,6 +135,7 @@ wiltFilter.addEventListener("change", (e) => {
 });
 
 seedsFilter.addEventListener("change", (e) => {
+  typeFilter.selectedIndex = 0;
   bloomFilter.selectedIndex = 0;
   wiltFilter.selectedIndex = 0;
 
