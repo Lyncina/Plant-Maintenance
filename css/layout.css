@@ -3,6 +3,7 @@
   box-sizing: border-box;
   color: #000;
   scrollbar-gutter: stable;
+  scrollbar-color: #ffffffc8 #9dcbff;
 }
 
 body {
@@ -152,11 +153,13 @@ dialog {
     position: relative;
     top: 50pt;
     margin: auto;
-    padding: 10pt;
+    padding: 25pt 10pt 10pt 10pt;
     height: 70%;
     width: 90%;
     border-radius: 8px;
     box-shadow: 0 0 10px 8px #00000090;
+    overflow-y: auto;
+    scrollbar-color: #ffffff7e transparent;
     img {
       float: left;
       margin-right: 5pt;
@@ -174,16 +177,15 @@ dialog {
       margin-top: 10pt;
     }
     button {
-      position: absolute;
-      left: 50%;
-      bottom: 5pt;
-      margin-top: 5pt;
+      position: fixed;
+      top: 50pt;
+      left: 5%;
       height: 25pt;
-      width: 97%;
+      width: 25pt;
       background: #d0d0d0;
       border-radius: 9px;
       border-color: rgba(0, 0, 0, 0.288);
-      transform: translateX(-50%);
+      transform: translate(60%, 60%);
     }
     button:hover {
       background: #b7b7b7;
