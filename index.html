@@ -16,12 +16,6 @@
 
     - Plug in IMGs and more data
     - With the new way to highlight tiles based on month, add filter to show things that bloom/wilt/seed by a range of months
-    - Add "Show Domestic Flowers" button
-    - Add "Show Wildflowers" button
-    - Add "Show Trees" button
-    - Add "Show Shrubs" button
-    - Add "Show Vines" button
-    - Or add "Type" filter for those buttons ^
     - Find way to easily add more data in future
     
     -->
@@ -69,67 +63,71 @@
           <span class="plant-name">Daffodil</span>
         </div>
         <dialog id="D-info"> <!--Dialog Start-->
-          <div>
-            <h2>Daffodil</h2>
-            <img src="IMGs/daffodil.png">
-            <p><strong>Blooms: </strong>
-              Spring
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Daffodil</h2>
+              <img src="IMGs/daffodil.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoD.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoT.open=true" id="tulip" class="tile show domestic bloom-spring wilt-spring seeds-spring">
+        <div onclick="infoT.open=true" id="tulip" class="tile show domestic bloom-spring wilt-spring seeds-spring b-4">
           <img src="IMGs/tulip.png">
           <span class="plant-name">Tulip</span>
         </div>
         <dialog id="T-info"> <!--Dialog Start-->
-          <div>
-            <h2>Tulip</h2>
-            <img src="IMGs/tulip.png">
-            <p><strong>Blooms: </strong>
-              Spring
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Tulip</h2>
+              <img src="IMGs/tulip.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoT.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -139,32 +137,36 @@
           <span class="plant-name">Grape Hyacinth</span>
         </div>
         <dialog id="GH-info"> <!--Dialog Start-->
-          <div>
-            <h2>Grape Hyacinth</h2>
-            <img src="IMGs/grape-hyacinth.png">
-            <p><strong>Blooms: </strong>
-              Spring, March-May
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              April-May
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              May-June
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              Spring
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              Fall
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              3 inches apart, 3 inches deep
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Grape Hyacinth</h2>
+              <img src="IMGs/grape-hyacinth.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, March-May
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>April-May
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>May-June
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>Place in moist towel inside fridge for 12 weeks
+                <br>Plant in Spring
+                <br>4-6 inches apart, 2-3 inches deep
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>Autumn
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>3 inches apart, 3 inches deep
+              </p>
+            </div>
             <button onclick="infoGH.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -174,32 +176,34 @@
           <span class="plant-name">Fondant Hyacinth</span>
         </div>
         <dialog id="FH-info"> <!--Dialog Start-->
-          <div>
-            <h2>Fondant Hyacinth</h2>
-            <img src="IMGs/fondant-hyacinth.png">
-            <p><strong>Blooms: </strong>
-              Spring, March-May
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              April-May
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              ?
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              Late Spring, Early Summer
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              Fall
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              5 inches apart, 4 inches deep
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Fondant Hyacinth</h2>
+              <img src="IMGs/fondant-hyacinth.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, March-May
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>April-May
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>Late Spring, Early Summer
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>Autumn
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>5 inches apart, 4 inches deep
+              </p>
+            </div>
             <button onclick="infoFH.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -209,67 +213,76 @@
           <span class="plant-name">Solomon's Seal</span>
         </div>
         <dialog id="SS-info"> <!--Dialog Start-->
-          <div>
-            <h2>Solomon's Seal</h2>
-            <img src="IMGs/solomons-seal.png">
-            <p><strong>Blooms: </strong>
-              Spring, April-May
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              May
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Solomon's Seal</h2>
+              <img src="IMGs/solomons-seal.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, April-May
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>May
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>Late Summer / Early Autumn
+                <br>1/4 inch deep
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>Autumn/Winter
+              </p>
+              <br>
+              <p><strong>Planting Rhizomes: </strong>
+                <br>2 inches deep
+              </p>
+            </div>
             <button onclick="infoSS.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoBI.open=true" id="bearded-iris" class="tile show domestic">
+        <div onclick="infoBI.open=true" id="bearded-iris" class="tile show domestic bloom-spring wilt-summer b-4 b-5">
           <img src="IMGs/bearded-iris.png">
           <span class="plant-name">Bearded Iris</span>
         </div>
         <dialog id="BI-info"> <!--Dialog Start-->
-          <div>
-            <h2>Bearded Iris</h2>
-            <img src="IMGs/bearded-iris.png">
-            <p><strong>Blooms: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">
+              <h2>Bearded Iris</h2>
+              <img src="IMGs/bearded-iris.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, April-May
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>Autumn, October
+                <br>3 inches apart, 3/4 inch deep
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>Late Summer, July-August
+                <br>Trim foliage down to approx. 6 inches
+              </p>
+              <br>
+              <p><strong>Planting Rhizomes: </strong>
+                <br>6-12 inches deep, cover roots but let the top of the rhizome show above soil
+                <br>Use low nitrogen fertilizer to give roots nutritional boost and help them recover from the transplant process
+                <br>Water, newly set plants need moisture to help their root systems become established
+              </p>
+            </div>
             <button onclick="infoBI.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -279,32 +292,34 @@
           <span class="plant-name">Bleeding Heart</span>
         </div>
         <dialog id="BH-info"> <!--Dialog Start-->
-          <div>
-            <h2>Bleeding Heart</h2>
-            <img src="IMGs/bleeding-heart.png">
-            <p><strong>Blooms: </strong>
-              Spring, April
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              May
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-            
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">
+              <h2>Bleeding Heart</h2>
+              <img src="IMGs/bleeding-heart.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, April
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>May
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoBH.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -314,32 +329,34 @@
           <span class="plant-name">Peony</span>
         </div>
         <dialog id="P-info"> <!--Dialog Start-->
-          <div>
-            <h2>Peony</h2>
-            <img src="IMGs/peony.png">
-            <p><strong>Blooms: </strong>
-              Spring, May
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              May
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Peony</h2>
+              <img src="IMGs/peony.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, May
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>May
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoP.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -349,32 +366,34 @@
           <span class="plant-name">Columbine</span>
         </div>
         <dialog id="C-info"> <!--Dialog Start-->
-          <div>
-            <h2>Columbine</h2>
-            <img src="IMGs/columbine.png">
-            <p><strong>Blooms: </strong>
-              Spring, April-May
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              May
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              June-August
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Columbine</h2>
+              <img src="IMGs/columbine.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, April-May
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>May
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>June-August
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoC.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -384,32 +403,36 @@
           <span class="plant-name">Stella d'Oro Daylily</span>
         </div>
         <dialog id="SDOD-info"> <!--Dialog Start-->
-          <div>
-            <h2>Stella d'Oro Daylily</h2>
-            <img src="IMGs/stella-d-oro.png">
-            <p><strong>Blooms: </strong>
-              Summer, June-August
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              July-August
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              July-August
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              Spring (When they first emerge)
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Stella d'Oro Daylily</h2>
+              <img src="IMGs/stella-d-oro.png">
+              <p><strong>Blooms: </strong>
+                <br>Summer, June-August
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>July-August
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>July-August
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>Spring or Autumn
+                <br>Place in moist paper towel inside fridge for 4-6 weeks
+                <br>Plant 12-18 inches apart, 1/4 inch deep
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>Spring (When they first emerge)
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoSDOD.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -419,32 +442,34 @@
           <span class="plant-name">Miss Tinkerbell Daylily</span>
         </div>
         <dialog id="MTD-info"> <!--Dialog Start-->
-          <div>
-            <h2>Miss Tinkerbell Daylily</h2>
-            <img src="IMGs/miss-tinkerbell.png">
-            <p><strong>Blooms: </strong>
-              Summer, June-July
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              July-August
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              July-August
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Miss Tinkerbell Daylily</h2>
+              <img src="IMGs/miss-tinkerbell.png">
+              <p><strong>Blooms: </strong>
+                <br>Summer, June-July
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>July-August
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>July-August
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoMTD.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -454,32 +479,34 @@
           <span class="plant-name">Orange Daylily</span>
         </div>
         <dialog id="OD-info"> <!--Dialog Start-->
-          <div>
-            <h2>Orange Daylily</h2>
-            <img src="IMGs/orange-daylily.png">
-            <p><strong>Blooms: </strong>
-              Summer, June
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              July
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              Fall
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Orange Daylily</h2>
+              <img src="IMGs/orange-daylily.png">
+              <p><strong>Blooms: </strong>
+                <br>Summer, June
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>July
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>Fall
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoOD.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -489,32 +516,34 @@
           <span class="plant-name">Hostas</span>
         </div>
         <dialog id="H-info"> <!--Dialog Start-->
-          <div>
-            <h2>Hostas</h2>
-            <img src="IMGs/hosta.png">
-            <p><strong>Blooms: </strong>
-              Summer, June
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              July
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              July-August
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Hostas</h2>
+              <img src="IMGs/hosta.png">
+              <p><strong>Blooms: </strong>
+                <br>Summer, June
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>July
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>July-August
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoH.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -524,32 +553,34 @@
           <span class="plant-name">Sweet William</span>
         </div>
         <dialog id="SW-info"> <!--Dialog Start-->
-          <div>
-            <h2>Sweet William</h2>
-            <img src="IMGs/sweet-william.png">
-            <p><strong>Blooms: </strong>
-              Summer, May-August
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Sweet William</h2>
+              <img src="IMGs/sweet-william.png">
+              <p><strong>Blooms: </strong>
+                <br>Summer, May-August
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoSW.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -559,68 +590,331 @@
           <span class="plant-name">Amethyst Falls Wisteria</span>
         </div>
         <dialog id="AFW-info"> <!--Dialog Start-->
-          <div>
-            <h2>Amethyst Falls Wisteria</h2>
-            <img src="IMGs/wisteria.png">
-            <p><strong>Blooms: </strong>
-              Spring, May / Summer, August
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2>Amethyst Falls Wisteria</h2>
+              <img src="IMGs/wisteria.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, May / Summer, August
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="infoAFW.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="info__.open=true" id="" class="tile show">
-          <img src="IMGs/.png">
-          <span class="plant-name">__</span>
+        <div onclick="infoSJ.open=true" id="spirea-japonica" class="tile show shrub">
+          <img src="IMGs/spirea-japonica.png">
+          <span class="plant-name">Spirea Japonica</span>
         </div>
-        <dialog id="-info"> <!--Dialog Start-->
-          <div>
-            <h2></h2>
-            <img src="IMGs/.png">
-            <p><strong>Blooms: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
-            <button onclick="info__.open=false"><strong>X</strong></button>
+        <dialog id="SJ-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Spirea Japonica</h2>
+              <img src="IMGs/spirea-japonica.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoSJ.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoSWN.open=true" id="ninebark" class="tile show shrub bloom-summer b-5">
+          <img src="IMGs/ninebark.png">
+          <span class="plant-name">Summer Wine Ninebark</span>
+        </div>
+        <dialog id="SWN-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Summer Wine Ninebark</h2>
+              <img src="IMGs/ninebark.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoSWN.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoTT.open=true" id="tulip-tree" class="tile show tree bloom-summer b-5">
+          <img src="IMGs/tulip-tree.png">
+          <span class="plant-name">Tulip Tree</span>
+        </div>
+        <dialog id="TT-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Tulip Tree</h2>
+              <img src="IMGs/tulip-tree.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoTT.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoPT.open=true" id="pear-tree" class="tile show tree bloom-spring b-4">
+          <img src="IMGs/pear.png">
+          <span class="plant-name">Pear Tree</span>
+        </div>
+        <dialog id="PT-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Pear Tree</h2>
+              <img src="IMGs/pear.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoPT.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoR.open=true" id="rose" class="tile show domestic shrub bloom-summer b-5 b-8">
+          <img src="IMGs/rose.png">
+          <span class="plant-name">? Rose</span>
+        </div>
+        <dialog id="R-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>? Rose</h2>
+              <img src="IMGs/rose.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoR.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoWR.open=true" id="wild-rose" class="tile show wild bloom-summer b-5">
+          <img src="IMGs/wild-rose.png">
+          <span class="plant-name">? Wild Rose</span>
+        </div>
+        <dialog id="WR-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>? Wild Rose</h2>
+              <img src="IMGs/wild-rose.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoWR.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoChic.open=true" id="chicory" class="tile show wild bloom-summer  b-6 b-7 b-8">
+          <img src="IMGs/chicory.png">
+          <span class="plant-name">Chicory</span>
+        </div>
+        <dialog id="Chic-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Chicory</h2>
+              <img src="IMGs/chicory.png">
+              <p><strong>Blooms: </strong>
+                <br>Summer, June-August
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoChic.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
+        <div onclick="infoSB.open=true" id="spring-beauty" class="tile show wild bloom-spring b-4 b-5 b-6">
+          <img src="IMGs/spring-beauty.png">
+          <span class="plant-name">Spring Beauty</span>
+        </div>
+        <dialog id="SB-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Spring Beauty</h2>
+              <img src="IMGs/spring-beauty.png">
+              <p><strong>Blooms: </strong>
+                <br>Spring, April-June
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoSB.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
 
@@ -629,67 +923,34 @@
           <span class="plant-name">__</span>
         </div>
         <dialog id="-info"> <!--Dialog Start-->
-          <div>
-            <h2></h2>
-            <img src="IMGs/.png">
-            <p><strong>Blooms: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
-            <button onclick="info__.open=false"><strong>X</strong></button>
-          </div>
-        </dialog> <!--Dialog End-->
-
-        <div onclick="info__.open=true" id="" class="tile show">
-          <img src="IMGs/.png">
-          <span class="plant-name">__</span>
-        </div>
-        <dialog id="-info"> <!--Dialog Start-->
-          <div>
-            <h2></h2>
-            <img src="IMGs/.png">
-            <p><strong>Blooms: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2></h2>
+              <img src="IMGs/.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="info__.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
@@ -701,32 +962,34 @@
         </div>
         <dialog id="-info"> --><!--Dialog Start-->
           <!--
-          <div>
-            <h2></h2>
-            <img src="IMGs/.png">
-            <p><strong>Blooms: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Wilts: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Seeds Available: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Seed: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Best Time to Propagate by Division: </strong>
-              
-            </p>
-            <br>
-            <p><strong>Planting Bulbs: </strong>
-              
-            </p>
+          <div class="content">
+            <div class="fade">              
+              <h2></h2>
+              <img src="IMGs/.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
             <button onclick="info__.open=false"><strong>X</strong></button>
           </div>
         </dialog> --><!--Dialog End-->

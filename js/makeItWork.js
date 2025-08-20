@@ -14,6 +14,15 @@ const infoOD = document.getElementById("OD-info");
 const infoH = document.getElementById("H-info");
 const infoSW = document.getElementById("SW-info");
 const infoAFW = document.getElementById("AFW-info");
+const infoSJ = document.getElementById("SJ-info");
+const infoSWN = document.getElementById("SWN-info");
+const infoTT = document.getElementById("TT-info");
+const infoPT = document.getElementById("PT-info");
+const infoR = document.getElementById("R-info");
+const infoWR = document.getElementById("WR-info");
+const infoChic = document.getElementById("Chic-info");
+const infoSB = document.getElementById("SB-info");
+
 
 const typeFilter = document.getElementById("type-filter");
 const bloomFilter = document.getElementById("bloom-filter");
