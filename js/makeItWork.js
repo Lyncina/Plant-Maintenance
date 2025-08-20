@@ -11,8 +11,20 @@ const infoC = document.getElementById("C-info");
 const infoSDOD = document.getElementById("SDOD-info");
 const infoMTD = document.getElementById("MTD-info");
 const infoOD = document.getElementById("OD-info");
-const infoOMH = document.getElementById("OMH-info");
+const infoH = document.getElementById("H-info");
+const infoSW = document.getElementById("SW-info");
+const infoAFW = document.getElementById("AFW-info");
+const infoSJ = document.getElementById("SJ-info");
+const infoSWN = document.getElementById("SWN-info");
+const infoTT = document.getElementById("TT-info");
+const infoPT = document.getElementById("PT-info");
+const infoR = document.getElementById("R-info");
+const infoWR = document.getElementById("WR-info");
+const infoChic = document.getElementById("Chic-info");
+const infoSB = document.getElementById("SB-info");
 
+
+const typeFilter = document.getElementById("type-filter");
 const bloomFilter = document.getElementById("bloom-filter");
 const wiltFilter = document.getElementById("wilt-filter");
 const seedsFilter = document.getElementById("seeds-filter");
@@ -28,6 +40,7 @@ function showTiles () {
     tile[i].classList.add("show");
   };
   
+  typeFilter.selectedIndex = 0;
   bloomFilter.selectedIndex = 0;
   wiltFilter.selectedIndex = 0;
   seedsFilter.selectedIndex = 0;
@@ -45,7 +58,39 @@ function filterTiles(c) {
   };
 };
 
+typeFilter.addEventListener("change", (e) => {
+  bloomFilter.selectedIndex = 0;
+  wiltFilter.selectedIndex = 0;
+  seedsFilter.selectedIndex = 0;
+
+  switch (e.target.value) {
+    case "dom-flowers":
+      filterTiles('domestic');
+    break;
+
+    case "wild-flowers":
+      filterTiles('wild');
+    break;
+
+    case "trees":
+      filterTiles('tree');
+    break;
+
+    case "shrubs":
+      filterTiles('shrub');
+    break;
+
+    case "vines":
+      filterTiles('vine');
+    break;
+
+    default:
+      filterTiles('tile');
+  }
+});
+
 bloomFilter.addEventListener("change", (e) => {
+  typeFilter.selectedIndex = 0;
   wiltFilter.selectedIndex = 0;
   seedsFilter.selectedIndex = 0;
 
@@ -72,6 +117,7 @@ bloomFilter.addEventListener("change", (e) => {
 });
 
 wiltFilter.addEventListener("change", (e) => {
+  typeFilter.selectedIndex = 0;
   bloomFilter.selectedIndex = 0;
   seedsFilter.selectedIndex = 0;
 
@@ -98,6 +144,7 @@ wiltFilter.addEventListener("change", (e) => {
 });
 
 seedsFilter.addEventListener("change", (e) => {
+  typeFilter.selectedIndex = 0;
   bloomFilter.selectedIndex = 0;
   wiltFilter.selectedIndex = 0;
 
@@ -127,19 +174,9 @@ seedsFilter.addEventListener("change", (e) => {
 const date = new Date();
 const month = (date.getMonth() +1);
 
-if (month >= 2 && month <= 4) {
-  season = 'spring';
-} else if (month >= 5 && month <= 7) {
-  season = 'summer';
-} else if (month >= 8 && month <= 10) {
-  season = 'autumn';
-} else if (month >= 11 && month <= 1) {
-  season = 'winter';
-};
-
-const bloomSoon = tiles.getElementsByClassName('bloom-' + season);
-const seedsSoon = tiles.getElementsByClassName('seeds-' + season);
-const attnSoon = tiles.getElementsByClassName('attn-' + season);
+const bloomSoon = tiles.getElementsByClassName('b-' + month);
+const seedsSoon = tiles.getElementsByClassName('s-' + month);
+const attnSoon = tiles.getElementsByClassName('a-' + month);
 
 for (let i = 0; i < bloomSoon.length; i++) {
   bloomSoon[i].classList.add('bloom-soon');
