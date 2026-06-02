@@ -181,3 +181,11 @@
 #SB-info > .content {
   background: linear-gradient(180deg, #fffcff 65%, #d29bcc 90%);
 }
+
+#orange-lily > img {
+  object-position: 70% 50%;
+}
+
+#OL-info > .content {
+  background: linear-gradient(180deg, #c05d1b 65%, #a74a07 90%);
+}

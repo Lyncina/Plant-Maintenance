@@ -22,6 +22,7 @@ const infoR = document.getElementById("R-info");
 const infoWR = document.getElementById("WR-info");
 const infoChic = document.getElementById("Chic-info");
 const infoSB = document.getElementById("SB-info");
+const infoOL = document.getElementById("OL-info");
 
 
 const typeFilter = document.getElementById("type-filter");

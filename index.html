@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/individualDesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
     <title>Plant Maintenance</title>
   </head>
   <body>
     <header>
       <h1>Plant Maintenance</h1>
-      <h3>Let's keep it growin'!</h2>
+      <h3>Let's keep it growin'!</h3>
+      <nav>
+        <a href="identification.html">Plant ID</a>
+      </nav>
     </header>
+    
     <!-- To-Dos:
 
     - Plug in IMGs and more data
@@ -246,7 +253,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoBI.open=true" id="bearded-iris" class="tile show domestic bloom-spring wilt-summer b-4 b-5">
+        <div onclick="infoBI.open=true" id="bearded-iris" class="tile show domestic bloom-spring wilt-summer b-4 b-5 s-8">
           <img src="IMGs/bearded-iris.png">
           <span class="plant-name">Bearded Iris</span>
         </div>
@@ -264,7 +271,7 @@
               </p>
               <br>
               <p><strong>Seeds Available: </strong>
-                <br>?
+                <br>Autumn, August
               </p>
               <br>
               <p><strong>Planting Seeds: </strong>
@@ -659,7 +666,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoSWN.open=true" id="ninebark" class="tile show shrub bloom-summer b-5">
+        <div onclick="infoSWN.open=true" id="ninebark" class="tile show shrub bloom-summer b-5 s-8">
           <img src="IMGs/ninebark.png">
           <span class="plant-name">Summer Wine Ninebark</span>
         </div>
@@ -669,7 +676,7 @@
               <h2>Summer Wine Ninebark</h2>
               <img src="IMGs/ninebark.png">
               <p><strong>Blooms: </strong>
-                <br>?
+                <br>Summer, May-June
               </p>
               <br>
               <p><strong>Wilts: </strong>
@@ -677,7 +684,7 @@
               </p>
               <br>
               <p><strong>Seeds Available: </strong>
-                <br>?
+                <br>August
               </p>
               <br>
               <p><strong>Planting Seeds: </strong>
@@ -770,7 +777,7 @@
           </div>
         </dialog> <!--Dialog End-->
 
-        <div onclick="infoR.open=true" id="rose" class="tile show domestic shrub bloom-summer b-5 b-8">
+        <div onclick="infoR.open=true" id="rose" class="tile show domestic shrub bloom-summer b-6 b-7 b-8 s-8">
           <img src="IMGs/rose.png">
           <span class="plant-name">? Rose</span>
         </div>
@@ -780,7 +787,7 @@
               <h2>? Rose</h2>
               <img src="IMGs/rose.png">
               <p><strong>Blooms: </strong>
-                <br>?
+                <br>Summer, June-August
               </p>
               <br>
               <p><strong>Wilts: </strong>
@@ -788,7 +795,7 @@
               </p>
               <br>
               <p><strong>Seeds Available: </strong>
-                <br>?
+                <br>August
               </p>
               <br>
               <p><strong>Planting Seeds: </strong>
@@ -918,6 +925,43 @@
           </div>
         </dialog> <!--Dialog End-->
 
+        <div onclick="infoOL.open=true" id="orange-lily" class="tile show domestic bloom-summer b-6">
+          <img src="IMGs/.png">
+          <span class="plant-name">Orange Lily</span>
+        </div>
+        <dialog id="OL-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2>Orange Lily</h2>
+              <img src="IMGs/.png">
+              <p><strong>Blooms: Summer, June</strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="infoOL.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+
         <div onclick="info__.open=true" id="" class="tile show">
           <img src="IMGs/.png">
           <span class="plant-name">__</span>
@@ -954,6 +998,44 @@
             <button onclick="info__.open=false"><strong>X</strong></button>
           </div>
         </dialog> <!--Dialog End-->
+
+        <div onclick="info__.open=true" id="" class="tile show">
+          <img src="IMGs/.png">
+          <span class="plant-name">__</span>
+        </div>
+        <dialog id="-info"> <!--Dialog Start-->
+          <div class="content">
+            <div class="fade">              
+              <h2></h2>
+              <img src="IMGs/.png">
+              <p><strong>Blooms: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Wilts: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Seeds Available: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Seeds: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Propagating by Division: </strong>
+                <br>?
+              </p>
+              <br>
+              <p><strong>Planting Bulbs: </strong>
+                <br>?
+              </p>
+            </div>
+            <button onclick="info__.open=false"><strong>X</strong></button>
+          </div>
+        </dialog> <!--Dialog End-->
+        
 
         <!--   Copy/Paste for another card
         <div onclick="info__.open=true" id="">

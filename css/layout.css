@@ -25,6 +25,17 @@ header {
     font-family: "Bradley Hand ITC", "Lucida Handwriting";
     text-shadow: 2px 2px 8px #ffffff, -2px -2px 8px #ffffff;
   }
+  nav {
+    a {
+      color: #096f09;
+      font-size: 13pt;
+      font-family: Chewy;
+      text-decoration: none;
+    }
+    a:hover {
+      text-shadow: 2px 2px 8px #ffffff, -2px -2px 8px #ffffff;
+    }
+  }
 }
 
 #filters {
